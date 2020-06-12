@@ -14,25 +14,16 @@ struct first_string{
 
 int main() 
 { 
-   /*int i_node[6] = {0,0,1,1,2,3};	
-   int j_node[6] = {1,2,4,3,3,4};
-   int capacidad[6] = {3,5,7,8,4,3};
-   int flow[6] = {0,0,0,0,0,0};
-   first_string first[5];
-   int second[5] = {100,0,0,0,0};
-   bool label[5] = {true,false,false,false,false};
    
-   int num_nodos = 5;
-   int num_arc = 6;*/
-//representa de donde viene el flujo, y en caso de ser negativo, a donde lo esta enviando
-//cantidad de flujo disponible en el nodo
+
+
 
 	int i_node[13] = {0,0,1,2,2,2,3,3,4,4,5,5,6};	
     int j_node[13] = {1,2,4,1,3,5,1,6,6,7,6,7,7};
     int capacidad[13] = {8,12,10,3,3,6,2,4,2,7,1,5,7};
     int flow[13] = {0,0,0,0,0,0};
-    first_string first[8];
-    int second[8] = {100,0,0,0,0,0,0,0};
+    first_string first[8];//representa de donde viene el flujo, y en caso de ser negativo, a donde lo esta enviando
+    int second[8] = {100,0,0,0,0,0,0,0};//cantidad de flujo disponible en el nodo
     bool label[8] = {true,false,false,false,false,false,false,false};
    
    int num_nodos = 8;
@@ -123,11 +114,6 @@ int main()
 			max_flow+=flow[i];
 	}
 
-	/*for(int i = 0;i<num_arc;i++){//suma de los flujos que salen del nodo fuente, para obtener el flujo maximo
-		if(i_node[i] == 0){
-			max_flow+=flow[i];
-		}
-	}/*
 
 	cout<<"El flujo maximo es: "<<max_flow<<endl;
    
