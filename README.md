@@ -16,6 +16,7 @@ Luego
 En caso de querer testear el codigo con datos propio cambiar los siguientes valores:
 
 i_node[k] y j_node[k] representan el arco i->j
+
 Para esa arista k, su capacidad sera capacidad[k] y su flujo flow[k]
 ```
 int i_node[13] = {0,0,1,2,2,2,3,3,4,4,5,5,6};
